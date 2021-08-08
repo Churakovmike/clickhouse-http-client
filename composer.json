@@ -1,0 +1,25 @@
+{
+    "name": "churakovmike/laravel-clickhouse-client",
+    "type": "library",
+    "description": "Clickhouse http-client for Laravel",
+    "keywords": [
+        "laravel",
+        "clickhouse laravel"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ChurakovMike\\LaravelClickhouseClient\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Churakov Mike",
+            "email": "churakovmike@mail.ru"
+        }
+    ],
+    "require": {},
+    "config": {
+        "sort-packages": true
+    }
+}
