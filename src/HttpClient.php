@@ -51,6 +51,15 @@ class HttpClient
         return $response->getBody()->getContents();
     }
 
+    public function post(string $query): bool
+    {
+        $response = $this->client->request('POST', '', [
+            'query' => $this->getPreparedQuery($query),
+        ]);
+
+        return $response->getStatusCode() === 200;
+    }
+
     protected function initClient(): void
     {
         $this->client = new Client($this->getConfig());
